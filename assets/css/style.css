@@ -2,30 +2,25 @@
     --primary-color: white;
     --secondary-color:black;
     --tertiary-color:orange;
-    /*--primary-color: #32a89e;
-    --secondary-color: #024e76;
-    --tertiary-color:#39a6b2 ;*/
   }
 
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 
 body {
     color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   header {
-  
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
     padding: 20px 35px;
-    background-color: black;
+    background-color:var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -81,28 +76,26 @@ header a{
   }
 
   section{
-    padding: 20px;
-     
+    padding: 20px; 
    }
+
 .hero{
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-position: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
   }
 
   .hero-img{
-    width: 90%;
-    margin: 3.5%;
-   
+   margin: 3.5%;
    }
 
    .avatar{
        border-radius: 50%;
-      }
+    }
 
       
   .intro p {
@@ -133,7 +126,7 @@ header a{
   }
 
   .my-work{
-    margin: 50px auto;
+    margin: auto;
     padding-bottom: 50px;
     width: 80%;
     display:flex;
@@ -157,6 +150,7 @@ header a{
   }
   .work1-img:hover {
     opacity: 100%;
+    transform: scale(1.5);
   }
 
   .contact-info a {
@@ -165,6 +159,7 @@ header a{
  
   .contact-info{
     margin: 7px 0;
+    font-size: 20px;
 }
 
   .contact-info ul {
@@ -190,7 +185,15 @@ header a{
   height: 100%;
   margin: 2%;
   position: relative;
-  
+}
+
+.work-a:hover .text{
+  display: none;
+
+}
+
+.work-a:hover .work1-img{
+transform: scale(1.5);
 }
 
 .text {
@@ -201,4 +204,24 @@ header a{
   color: var(--tertiary-color);
   width: 100%;
   padding-top: 5%;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen  and (max-width:980px) {
+}
+
+ /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header nav ul li a {
+    font-size: large;
+  }
+
+  .text{
+    font-size: small;
+  }
 }
