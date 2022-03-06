@@ -10,7 +10,7 @@ Palak Devgan's Portfolio that showcase my skills and recent work.
 * Media Queries
 
 ## Screenshot
-![Scrrenshot](assets\images\Screenshot.jpg?raw=true "")
+![Screenshot](assets\images\Screenshot.jpg?raw=true "")
 
 ## Website
 https://palakdevgan.github.io/PalakDevganPortfolio/
